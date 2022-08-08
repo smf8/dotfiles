@@ -1,45 +1,31 @@
+ServerAliveInterval 100
 Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_ed25519
-Host parsonline
-  HostName 193.39.9.106
-  Port 22
-  User root
-	IdentityFile ~/.ssh/id_ed25519
-	IdentitiesOnly yes
+
+Host gitlab.snapp.ir
+  HostName gitlab.snapp.ir
+  User mohamad.fatemi
+  IdentityFile ~/.ssh/id_ed25519
 
 Host asia-doris
-  HostName 194.36.174.104
+  HostName 194.36.174.190
   Port 22
   User root
 	IdentityFile ~/.ssh/id_ed25519
 	IdentitiesOnly yes
 
-Host asia-cloud
-  HostName 193.151.130.169
+Host digital-de
+  HostName 139.59.135.130
   Port 22
   User root
 	IdentityFile ~/.ssh/id_ed25519
-	IdentitiesOnly yes
+  IdentitiesOnly yes
 
-Host nl
-  HostName 23.184.48.107
-  Port 22
-  User root
-	IdentityFile ~/.ssh/id_ed25519
-	IdentitiesOnly yes
-
-Host de-pq
-  HostName 45.153.230.138
-  Port 22
-  User root
-	IdentityFile ~/.ssh/id_ed25519
-	IdentitiesOnly yes
-
-Host de-azure
-  HostName smf8.germanywestcentral.cloudapp.azure.com
+Host azure-nw
+  HostName  51.120.124.0
   Port 22
   User smf8
 	IdentityFile ~/.ssh/id_ed25519
-	IdentitiesOnly yes
+  IdentitiesOnly yes
