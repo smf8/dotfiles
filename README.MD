@@ -11,8 +11,8 @@ For normal autocomplition add `source <(kubectl completion zsh)` to `~/.zshrc`. 
 
 Install: 
 ```
-go install -u github.com/bonnefoa/kubectl-fzf/v3/cmd/kubectl-fzf-completion@main
-go install -u github.com/bonnefoa/kubectl-fzf/v3/cmd/kubectl-fzf-server@main
+go install github.com/bonnefoa/kubectl-fzf/v3/cmd/kubectl-fzf-completion@main
+go install github.com/bonnefoa/kubectl-fzf/v3/cmd/kubectl-fzf-server@main
 
 wget https://raw.githubusercontent.com/bonnefoa/kubectl-fzf/master/shell/kubectl_fzf.plugin.zsh -O ~/.kubectl_fzf.plugin.zsh
 echo "source <(kubectl completion zsh)" >> ~/.zshrc
