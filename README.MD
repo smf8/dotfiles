@@ -20,4 +20,7 @@ echo "source ~/.kubectl_fzf.plugin.zsh >> ~/.zshrc
 ```
 **Note**: For oc autocomplete, edit `~/.kubectl_fzf.plugin.zsh` and use `&&` for `kubectl` name check.
 
+## Goland
+I Use jetbrains cloud settings sync. But some settings can not be synced.
 
+- Import `watchers.xml` in `Tools/File Watchers` for `gci` and `gofumpt`.
