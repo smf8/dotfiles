@@ -15,17 +15,33 @@ Host asia-doris
   User root
 	IdentityFile ~/.ssh/id_ed25519
 	IdentitiesOnly yes
-
-Host digital-de
-  HostName 139.59.135.130
+	
+Host digital-nl
+  HostName 146.190.30.236
   Port 22
   User root
 	IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
 
-Host azure-nw
-  HostName  51.120.124.0
+
+Host digital-uk-2
+  HostName 178.62.84.145
   Port 22
-  User smf8
+  User root
+	IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+
+Host digital-uk
+  HostName 138.68.184.5
+  Port 22
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes  
+
+
+Host asia-xaas
+  HostName  31.7.75.126
+  Port 22
+  User root
 	IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
