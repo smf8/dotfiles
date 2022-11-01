@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 sudo apt install git curl fzf zsh
 
