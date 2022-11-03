@@ -1,5 +1,4 @@
-#Dotfiles
-
+# Dotfiles
 
 ## Theme
 I use `p10k` as zsh theme with default configuration.

@@ -1,18 +1,18 @@
 #!/bin/bash
 
-sudo apt install git curl fzf zsh
+sudo apt update
 
 if ! sudo apt install -y curl fzf terminator zsh; then
     echo "install dependencies failed"
     exit 1
 fi
 
-if ! chsh -s "$(which zsh)"; then
+if ! sudo chsh -s "$(which zsh)"; then
   echo "failed to change default shell"
   exit 1
 fi
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 
 echo "installing plugins"
@@ -29,4 +29,5 @@ fc-cache -f -v
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-p10k configure
+echo "done :) copy zshrc file then run p10k configure"
+#p10k configure

@@ -54,7 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-alias vpn-baly="sudo openconnect -u mohamad.fatemi vpn-aws.snapp.ir:443"
 source ~/.kube/oc_autocomplete.sh
 source ~/.kube/stern_autocomplete.sh
 source <(helm completion zsh)
