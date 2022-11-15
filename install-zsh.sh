@@ -27,7 +27,7 @@ sudo cp /tmp/p10km/*.ttf /usr/local/share/fonts/
 
 fc-cache -f -v
 
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 echo "done :) copy zshrc file then run p10k configure"
 #p10k configure
