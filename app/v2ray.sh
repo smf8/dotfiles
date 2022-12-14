@@ -15,14 +15,14 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
         echo "done installing v2ray. now modify config file in /usr/local/etc/v2ray/config.json"
 
-        sudo cp config-foreign.yaml /usr/local/etc/v2ray/config.json
+        sudo cp app/v2ray-config.yaml /usr/local/etc/v2ray/config.json
 
-        sed "s/SS_PASSWORD/${SS_PASSWORD}/g" /usr/local/etc/v2ray/config.json
-        sed "s/VMESS_UUID_NGINX/${VMESS_UUID_NGINX}/g" /usr/local/etc/v2ray/config.json
-        sed "s/VMESS_UUID_WS_1/${VMESS_UUID_WS_1}/g" /usr/local/etc/v2ray/config.json
-        sed "s/VMESS_UUID_WS_2/${VMESS_UUID_WS_2}/g" /usr/local/etc/v2ray/config.json
-        sed "s/VMESS_UUID_TCP_1/${VMESS_UUID_TCP_1}/g" /usr/local/etc/v2ray/config.json
-        sed "s/VMESS_UUID_TCP_2/${VMESS_UUID_TCP_2}/g" /usr/local/etc/v2ray/config.json
+        sed -i "s/SS_PASSWORD/${SS_PASSWORD}/g" /usr/local/etc/v2ray/config.json
+        sed -i "s/VMESS_UUID_NGINX/${VMESS_UUID_NGINX}/g" /usr/local/etc/v2ray/config.json
+        sed -i "s/VMESS_UUID_WS_1/${VMESS_UUID_WS_1}/g" /usr/local/etc/v2ray/config.json
+        sed -i "s/VMESS_UUID_WS_2/${VMESS_UUID_WS_2}/g" /usr/local/etc/v2ray/config.json
+        sed -i "s/VMESS_UUID_TCP_1/${VMESS_UUID_TCP_1}/g" /usr/local/etc/v2ray/config.json
+        sed -i "s/VMESS_UUID_TCP_2/${VMESS_UUID_TCP_2}/g" /usr/local/etc/v2ray/config.json
 
         sudo systemctl restart v2ray
 
