@@ -99,7 +99,7 @@
             "security": "auto"
           },
           {
-            "id": "VMESS_UUID_TCP_1",
+            "id": "VMESS_UUID_TCP_2",
             "alterId": 0,
             "security": "auto"
           }
@@ -134,6 +134,17 @@
           }
         }
       }
+    }
+  ],
+  "outbound": {
+    "tag": "freedom",
+    "protocol": "freedom"
+  },
+  "inboundDetour": null,
+  "outboundDetour": [
+    {
+      "protocol": "blackhole",
+      "tag": "blackhole"
     }
   ]
 }
