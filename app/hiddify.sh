@@ -15,3 +15,5 @@ sed -i "s/1004/1400/g" /opt/hiddify-config/nginx/common.conf.template
 cd /opt/hiddify-config || exit 1
 
 sudo bash install.sh
+
+cp /opt/hiddify-config/nginx/use-link ~/
