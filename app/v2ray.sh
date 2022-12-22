@@ -15,7 +15,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
         echo "done installing v2ray. now modify config file in /usr/local/etc/v2ray/config.json"
 
-        sudo cp app/v2ray-config.yaml /usr/local/etc/v2ray/config.json
+        sudo cp app/v2ray-config.json /usr/local/etc/v2ray/config.json
 
         sed -i "s/SS_PASSWORD/${SS_PASSWORD}/g" /usr/local/etc/v2ray/config.json
         sed -i "s/VMESS_UUID_NGINX/${VMESS_UUID_NGINX}/g" /usr/local/etc/v2ray/config.json
