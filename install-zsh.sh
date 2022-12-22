@@ -2,7 +2,7 @@
 
 sudo apt update
 
-if ! sudo apt install -y curl fzf terminator zsh; then
+if ! sudo apt install -y curl fzf terminator zsh jq; then
     echo "install dependencies failed"
     exit 1
 fi
