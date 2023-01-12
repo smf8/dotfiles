@@ -9,7 +9,9 @@ cp app/hiddify-config.env hiddify-config/config.env
 
 mv hiddify-config /opt/
 
-sed -i "s/_DOMAIN_/${DOMAIN}/g" /opt/hiddify-config/config.env
+sed -i "s/_NO_CDN_DOMAIN_/${NO_CDN_DOMAIN}/g" /opt/hiddify-config/config.env
+sed -i "s/_CDN_DOMAIN_/${CDN_DOMAIN}/g" /opt/hiddify-config/config.env
+sed -i "s/_ADMIN_SECRET_/${HIDDIFY_ADMIN_SECRET}/g" /opt/hiddify-config/config.env
 sed -i "s/_SECRET_/${HIDDIFY_SECRET}/g" /opt/hiddify-config/config.env
 
 #sed -i "/certbot/c\certbot --nginx -d ${DOMAIN} --non-interactive --agree-tos --dns-cloudflare --dns-cloudflare-credentials /etc/cf.ini  --https-port 444 --no-redirect" /opt/hiddify-config/nginx/run.sh
